@@ -1,0 +1,8 @@
+---
+- name: From Ansible With Teleport
+  hosts: all
+  tasks:
+    - name: Use ansible to deliver hello to /tmp via teleport
+      copy:
+        src: ./files/hello.txt
+        dest: /tmp/hello.txt
